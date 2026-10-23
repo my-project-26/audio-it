@@ -47,7 +47,7 @@ jobs:
           git config user.name "wortwerk-bot"
           git config user.email "actions@users.noreply.github.com"
           echo ".src/" > .git/info/exclude
-          python .src/tools/make-audio.py it it@m it@f2
+          python .src/tools/make-audio.py it it@m
       - name: Hochladen
         run: |
           if [ ! -d it ] && [ ! -d it-m ]; then echo "Noch keine italienische Wortliste – nichts zu tun"; exit 0; fi
