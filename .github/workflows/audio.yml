@@ -4,7 +4,7 @@ name: Italienische Aufnahmen erzeugen
 # Wort und jeden Beispielsatz eine MP3-Aufnahme (natürliche Stimme) im Ordner it/.
 # Die App lädt sie von https://my-project-26.github.io/audio-it/it/…
 # Läuft täglich (neue Wörter werden ergänzt) und lässt sich unter „Actions“ von Hand starten.
-# Erstlauf: Italienisch A1–C1
+# Läufe: Italienisch A1–C1, Erweiterung auf 3.929 Wörter
 on:
   workflow_dispatch:
   push:
