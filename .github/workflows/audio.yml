@@ -49,6 +49,7 @@ jobs:
           python .src/tools/make-audio.py it
       - name: Hochladen
         run: |
+          if [ ! -d it ]; then echo "Noch keine italienische Wortliste – nichts zu tun"; exit 0; fi
           git add -A it
           if git diff --cached --quiet; then echo "Nichts Neues"; exit 0; fi
           git commit -q -m "Aufnahmen aktualisiert"
