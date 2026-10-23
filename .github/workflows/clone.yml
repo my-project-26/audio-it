@@ -4,9 +4,6 @@ name: Stimme klonen (Italienisch)
 # Vorbild: voices/ref-gemini/<stimme>-it.wav in my-project-26/sprachen).
 # Ergebnis: it-<ordner>/. Startet sich selbst neu, bis alles fertig und geprüft ist.
 on:
-  # alle 2 Stunden: weitermachen, falls noch etwas fehlt (ohne Angaben: Frau 2, alle Niveaus)
-  schedule:
-    - cron: "13 */2 * * *"
   workflow_dispatch:
     inputs:
       voice:
